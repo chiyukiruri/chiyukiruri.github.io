@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://rurichiyuki.disqus.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            Linux 复习资料 | 
+        
+        Chiyuki Ruri&#39;s Blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="chiyukiruri 千雪琉璃 药娘 吃糖 技术,考试,Linux">
+    <meta name="theme-color" content="#c47ec6">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #8f0074;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #c47ec6 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #c47ec6 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #c47ec6 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #8f0074;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Chiyuki Ruri&#39;s Blog">
+    <meta name="msapplication-starturl" content="https://ruri.chiyuki.moe/2018/01/04/linux/">
+    <meta name="msapplication-navbutton-color" content="#c47ec6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Chiyuki Ruri&#39;s Blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://ruri.chiyuki.moe/2018/01/04/linux/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Linux 复习资料 | Chiyuki Ruri&#39;s Blog">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="考试"> <meta property="og:article:tag" content="Linux"> 
+
+    
+        <meta property="article:published_time" content="Thu Jan 04 2018 20:30:41 GMT+0800">
+        <meta property="article:modified_time" content="Sat Aug 29 2020 21:54:02 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://ruri.chiyuki.moe/2018/01/04/linux/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://ruri.chiyuki.moe/2018/01/04/linux/index.html",
+    "headline": "Linux 复习资料",
+    "datePublished": "Thu Jan 04 2018 20:30:41 GMT+0800",
+    "dateModified": "Sat Aug 29 2020 21:54:02 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "千雪琉璃",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "千雪琉璃的小窝"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Chiyuki Ruri&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",考试,Linuxchiyukiruri 千雪琉璃 药娘 吃糖 技术",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-110021192-1', 'auto');ga('send', 'pageview');
+</script>
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+        
+            <meta name="theme-color" content="#c47ec6">
+        
+            <meta name="msapplication-navbutton-color" content="#c47ec6">
+        
+            <meta name="apple-mobile-web-app-capable" content="yes">
+        
+            <meta name="apple-mobile-web-app-status-bar-style" content="#c47ec6">
+        
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#知识点总结"><span class="post-toc-number">1.</span> <span class="post-toc-text">知识点总结</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Linux-系统目录结构"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Linux 系统目录结构</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Shell-变量"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Shell 变量</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#变量引用"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">变量引用</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#参数置换变量"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">参数置换变量</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#系统变量"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">系统变量</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#环境变量"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">环境变量</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#shell-分支循环"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">shell 分支循环</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#if"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">if</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#for"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">for</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#while"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">while</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#until"><span class="post-toc-number">1.3.4.</span> <span class="post-toc-text">until</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#case"><span class="post-toc-number">1.3.5.</span> <span class="post-toc-text">case</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文件系统"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">文件系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ext2-包含"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">ext2 包含</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#块组包括"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text">块组包括</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#超级块"><span class="post-toc-number">1.4.3.</span> <span class="post-toc-text">超级块</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#系统启动及引导"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">系统启动及引导</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Linux-系统引导"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">Linux 系统引导</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#init-进程引导过程"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">init 进程引导过程</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#系统运行级别"><span class="post-toc-number">1.5.3.</span> <span class="post-toc-text">系统运行级别</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#常用操作"><span class="post-toc-number">2.</span> <span class="post-toc-text">常用操作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#用户管理"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">用户管理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#useradd"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">useradd</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#usermod"><span class="post-toc-number">2.1.2.</span> <span class="post-toc-text">usermod</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#userdel"><span class="post-toc-number">2.1.3.</span> <span class="post-toc-text">userdel</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#passwd"><span class="post-toc-number">2.1.4.</span> <span class="post-toc-text">passwd</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#gpasswd"><span class="post-toc-number">2.1.5.</span> <span class="post-toc-text">gpasswd</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#批量新建用户"><span class="post-toc-number">2.1.6.</span> <span class="post-toc-text">批量新建用户</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#检查用户及组信息文件有效性"><span class="post-toc-number">2.1.7.</span> <span class="post-toc-text">检查用户及组信息文件有效性</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#groupadd"><span class="post-toc-number">2.1.8.</span> <span class="post-toc-text">groupadd</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#yum-本地仓库建立"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">yum 本地仓库建立</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#etc-host-conf"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">&#x2F;etc&#x2F;host.conf</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#网络参数设定"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">网络参数设定</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#iptables"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">iptables</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#备份与恢复-iptables"><span class="post-toc-number">2.5.1.</span> <span class="post-toc-text">备份与恢复 iptables</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#常用命令"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">常用命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#文件操作"><span class="post-toc-number">2.6.1.</span> <span class="post-toc-text">文件操作</span></a></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/images/linux.jpg)">
+    
+            <p class="article-headline-p">
+                Linux 复习资料
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>千雪琉璃</strong>
+        <span>1月 04, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/%E8%80%83%E8%AF%95/" rel="tag">考试</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Linux 复习资料&url=https://ruri.chiyuki.moe/2018/01/04/linux/index.html&via=千雪琉璃" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://ruri.chiyuki.moe/2018/01/04/linux/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://ruri.chiyuki.moe/2018/01/04/linux/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://ruri.chiyuki.moe/2018/01/04/linux/index.html&text=Linux 复习资料" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>嘛～又是临开考前一天总结复习资料～但愿能过喵～<br>顺便，好想住爱丽丝这样的房间～</p>
+<h2 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h2><h3 id="Linux-系统目录结构"><a href="#Linux-系统目录结构" class="headerlink" title="Linux 系统目录结构"></a>Linux 系统目录结构</h3><p>/bin 用户可执行的命令<br>/sbin 超级用户命令<br>/dev 设备驱动文件<br>/proc 内存映射文件<br>/etc 软件与系统配置<br>/lib 库文件<br>/usr 外来软件包<br>/opt 第三方软件安装目录<br>/mnt 系统挂载点<br>/tmp 临时文件夹<br>/var 日志，邮件<br>/home 用户主目录<br>/sys 系统文件</p>
+<h3 id="Shell-变量"><a href="#Shell-变量" class="headerlink" title="Shell 变量"></a>Shell 变量</h3><h4 id="变量引用"><a href="#变量引用" class="headerlink" title="变量引用"></a>变量引用</h4><ol>
+<li>$name name 的值，未设定为空</li>
+<li>${name} 将 name 和其他字符分隔开，避免出现混淆</li>
+<li>${name[n]} name 中第n个元素</li>
+<li>${name[*]} 将 name 扩展成一个字符串，用空格分开</li>
+<li>${name[@]} 将 name 扩展成一个数组</li>
+<li>${name&#35;pattern} 去掉从开始匹配的最少内容</li>
+<li>${name&#35;&#35;pattern} 去掉从开始匹配的最多内容</li>
+<li>${name%pattern} 去掉从末尾匹配的最少内容</li>
+<li>${name%%pattern} 去掉从末尾匹配的最多内容</li>
+<li>${&#35;@} $@ 的元素数量</li>
+<li>${&#35;*} $* 的元素数量</li>
+<li>${&#35;name[i]} name 中第 i 个元素的长度</li>
+<li>${&#35;name[*]} ${&#35;name[@]} 均为 name 中元素数量</li>
+</ol>
+<h4 id="参数置换变量"><a href="#参数置换变量" class="headerlink" title="参数置换变量"></a>参数置换变量</h4><ol>
+<li>var2=${var1:-string} var1 为空时，var2 = string。否则 var2 = var1。</li>
+<li>var2=${var1:=string} var1 为空时，var2=var1=string。否则 var2=var1。</li>
+<li>var2=${var1:+string} var1为空时，var1=var2=null。否则 var2=string。</li>
+<li>var2=${var1:?string} var1为空时，显示 shell脚本名 : var1 : string。否则 var2=var1。</li>
+</ol>
+<h4 id="系统变量"><a href="#系统变量" class="headerlink" title="系统变量"></a>系统变量</h4><ol>
+<li>$n 第 n 个参数。</li>
+<li>$&#35; 命令行参数的个数。</li>
+<li>$0 当前程序的名称。</li>
+<li>$? 前一个命令或函数的返回码</li>
+<li>$* 以”参数1 参数2 … “ 形式保存所有参数</li>
+<li>$@ 以”参数1” “参数2” … 形式保存所有参数</li>
+<li>$$ 本程序的(进程ID号)PID</li>
+<li>$! 上一个命令的PID</li>
+</ol>
+<h4 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h4><p>系统环境变量均为大写</p>
+<ol>
+<li>HOME 当前用户目录</li>
+<li>MAIL 系统邮箱目录</li>
+<li>PATH 系统环境变量</li>
+<li>PS1 命令行前缀</li>
+<li>PWD 当前目录</li>
+<li>SHELL 当前使用的 shell</li>
+</ol>
+<h3 id="shell-分支循环"><a href="#shell-分支循环" class="headerlink" title="shell 分支循环"></a>shell 分支循环</h3><h4 id="if"><a href="#if" class="headerlink" title="if"></a>if</h4><pre><code>if [ 测试条件 ]
+then
+else
+fi</code></pre><p>测试条件 [ ] 前后各有一个空格，[[ ]] 用来测试字符串和文件属性。<br>文件测试运算符</p>
+<ol>
+<li>-r|-w|-x filename 文件可读|可写|可执行</li>
+<li>-f|-d|-p name 是文件|是目录|是管道</li>
+<li>-b|-c name  块设备|字符设备</li>
+<li>-s 文件存在并长度大于0</li>
+</ol>
+<h4 id="for"><a href="#for" class="headerlink" title="for"></a>for</h4><pre><code>for file in m*.c
+do
+  cat $flie|pr
+done
+
+for((j=1;j&lt;=i;j++))
+do
+  echo $j
+done</code></pre><h4 id="while"><a href="#while" class="headerlink" title="while"></a>while</h4><p>为真时进入循环</p>
+<pre><code>while [ 条件 ]
+do
+done</code></pre><h4 id="until"><a href="#until" class="headerlink" title="until"></a>until</h4><p>为假时进入循环</p>
+<pre><code>until [条件]
+do
+done</code></pre><h4 id="case"><a href="#case" class="headerlink" title="case"></a>case</h4><pre><code>case 字符串 in
+字符串1)
+命令;;
+字符串2）
+命令;;
+esac</code></pre><h3 id="文件系统"><a href="#文件系统" class="headerlink" title="文件系统"></a>文件系统</h3><h4 id="ext2-包含"><a href="#ext2-包含" class="headerlink" title="ext2 包含"></a>ext2 包含</h4><ol>
+<li>引导块 为介质第一块数据块</li>
+<li>块组1～n</li>
+</ol>
+<h4 id="块组包括"><a href="#块组包括" class="headerlink" title="块组包括"></a>块组包括</h4><ol>
+<li>超级块</li>
+<li>块组结构描述 描述块组数据结构</li>
+<li>块位示图 分配或释放数据块时使用</li>
+<li>索引节点位示图 创建删除文件时使用</li>
+<li>索引节点表 索引节点表所占的数据块数</li>
+<li>数据块</li>
+</ol>
+<h4 id="超级块"><a href="#超级块" class="headerlink" title="超级块"></a>超级块</h4><ol>
+<li>幻数 确认是 ext2 文件系统的超级块</li>
+<li>修订级别</li>
+<li>安装计数和最大安装数</li>
+<li>块组号码</li>
+<li>数据块大小</li>
+<li>每组数据块个数</li>
+<li>空闲块</li>
+<li>空闲索引节点</li>
+<li>第一个索引节点</li>
+</ol>
+<h3 id="系统启动及引导"><a href="#系统启动及引导" class="headerlink" title="系统启动及引导"></a>系统启动及引导</h3><h4 id="Linux-系统引导"><a href="#Linux-系统引导" class="headerlink" title="Linux 系统引导"></a>Linux 系统引导</h4><ol>
+<li>主机加电，进行 BIOS 自检，读取 MBR 中的引导程序进行加载</li>
+<li>启动 grub 引导硬盘中的操作系统，加载 Linux 内核</li>
+<li>加载 Linux 内核，内核接管引导程序，启动 init 进程<ul>
+<li>init 可扮演父进程角色</li>
+<li>在不同运行级别中启动不同运行脚本</li>
+</ul>
+</li>
+<li>init 主导引导，系统初始化，加载系统服务</li>
+<li>执行 /bin/login 输入用户名及口令</li>
+</ol>
+<h4 id="init-进程引导过程"><a href="#init-进程引导过程" class="headerlink" title="init 进程引导过程"></a>init 进程引导过程</h4><ol>
+<li>读取 /etc/inittab 文件和 /etc/init 目录中的文件，根据设置进行初始化</li>
+<li>/etc/rc.d/rc.sysinit init 进程执行的第一个脚本，任何级别均会运行，完成激活交换分区检，查磁盘，加载硬件模块以及其他一些需要优先执行的工作。</li>
+<li>/etc/rc.d/rc 建立运行级别的运行环境</li>
+<li>/etc/rc.d/rcX.d/[KS] , /etc/rc.d/rc 是一个 shell 脚本，如果它接受 5 作为参数，去执行 /etc/rc.d/rc5.d 目录下的所有的启动脚本，这些脚本实际上是链接文件而不是真正的启动脚本在 /etc/rc.d/init.d 目录下。 /etc/rc.d/rc5.d 的脚本都是以 K 或 S 开头的，S 表示启动某些服务，K 表示终止某些服务。</li>
+<li>至于在每个运行级别运行哪些服务，可以通过chkconfig设定。</li>
+<li>/etc/rc.d/rc.local 系统中运行级别 2、3、5 都把 /etc/rc.d/rc.local 文件作为初始化脚本中最后一个来运行，所以一般在该文件中存储的是在开机引导中起作用，但在登陆之前起作用的命令。</li>
+</ol>
+<h4 id="系统运行级别"><a href="#系统运行级别" class="headerlink" title="系统运行级别"></a>系统运行级别</h4><ol>
+<li>runlevel 查看当前运行级别</li>
+<li>chkconfig<ul>
+<li>–list name 查看进程不同级别启动情况</li>
+<li>–level 234 name on|off 关闭或开启某级别某进程自动启动</li>
+</ul>
+</li>
+</ol>
+<h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><h3 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h3><h4 id="useradd"><a href="#useradd" class="headerlink" title="useradd"></a>useradd</h4><p>新建用户</p>
+<ul>
+<li>-s shell  </li>
+<li>-d 用户主目录  </li>
+<li>-g 用户默认组      </li>
+<li>-G 用户附属组  </li>
+<li>-p 密码  </li>
+<li>-u uid  </li>
+<li>-r 系统账户</li>
+</ul>
+<h4 id="usermod"><a href="#usermod" class="headerlink" title="usermod"></a>usermod</h4><p>修改用户，与 useradd 可用参数相同</p>
+<ul>
+<li>-l 修改登录名</li>
+<li>-L 锁定用户</li>
+<li>-U 解锁用户</li>
+</ul>
+<h4 id="userdel"><a href="#userdel" class="headerlink" title="userdel"></a>userdel</h4><ul>
+<li>-r 同时删除主目录</li>
+</ul>
+<h4 id="passwd"><a href="#passwd" class="headerlink" title="passwd"></a>passwd</h4><p>修改密码</p>
+<ul>
+<li>-l 锁定用户</li>
+<li>-u 解锁用户</li>
+</ul>
+<h4 id="gpasswd"><a href="#gpasswd" class="headerlink" title="gpasswd"></a>gpasswd</h4><p>维护组与用户关系</p>
+<ul>
+<li>-a user group 添加用户到某个组</li>
+<li>-d user group 从某个组删除某个用户</li>
+<li>-R user group 限制成员访问</li>
+<li>-A user group 添加管理员</li>
+</ul>
+<h4 id="批量新建用户"><a href="#批量新建用户" class="headerlink" title="批量新建用户"></a>批量新建用户</h4><ol>
+<li>新建用户信息文件，与 /etc/passwd 格式相同</li>
+<li>newusers &lt; filename</li>
+<li>新建密码文件格式为 用户名:密码</li>
+<li>chpasswd &lt; filename</li>
+<li>pwconv</li>
+</ol>
+<h4 id="检查用户及组信息文件有效性"><a href="#检查用户及组信息文件有效性" class="headerlink" title="检查用户及组信息文件有效性"></a>检查用户及组信息文件有效性</h4><ol>
+<li>pwck 检查用户文件有效性</li>
+<li>grpck 检查组文件有效性</li>
+</ol>
+<h4 id="groupadd"><a href="#groupadd" class="headerlink" title="groupadd"></a>groupadd</h4><p>新建组</p>
+<ul>
+<li>-g GID</li>
+<li>-p 密码</li>
+</ul>
+<h3 id="yum-本地仓库建立"><a href="#yum-本地仓库建立" class="headerlink" title="yum 本地仓库建立"></a>yum 本地仓库建立</h3><ol>
+<li>软件包安装 deltarpm,deltarpm-python,createrepo</li>
+<li>复制 Packages 目录</li>
+<li>编辑 yum 配置</li>
+<li>createrepo 创建仓库</li>
+</ol>
+<h3 id="etc-host-conf"><a href="#etc-host-conf" class="headerlink" title="/etc/host.conf"></a>/etc/host.conf</h3><pre><code>order hosts, bind  # 先查找host，再查找服务器
+multi on  # 允许单网卡多地址</code></pre><h3 id="网络参数设定"><a href="#网络参数设定" class="headerlink" title="网络参数设定"></a>网络参数设定</h3><pre><code># 设置 ip 和子网掩码
+ifconfig eth0 192.168.120.56 netmask 255.255.255.0 broadcast 192.168.120.255
+
+# 设置路由
+route  [add|del] [-net|-host] target [netmask Nm] [gw Gw] [[dev] If]
+
+# 设置DNS
+修改 /etc/resolv.conf
+nameserver 8.8.8.8</code></pre><h3 id="iptables"><a href="#iptables" class="headerlink" title="iptables"></a>iptables</h3><ul>
+<li>-t [filter]|nat  选择表，默认filter</li>
+<li>-F 清空表</li>
+<li>-L 显示规则列表<ul>
+<li>v 详细信息</li>
+<li>x 禁用 v 的单位转换</li>
+<li>n 只显示端口号和 ip ，禁止转换成域名或服务名称</li>
+</ul>
+</li>
+<li>-A|I INPUT|OUTPUT|FORWARD|POSTROUTING|PREROUTING 添加|插入 规则</li>
+<li>-D|R INPUT|OUTPUT|FORWARD|POSTROUTING|PREROUTING 删除|替换 规则</li>
+<li>-p tcp|udp|icmp 使用协议</li>
+<li>-s|d Ip 源地址|目标地址</li>
+<li>-i|o 网卡 进入的网卡|输出的网卡</li>
+<li>–sport|dport port:port 源端口|目标端口</li>
+<li>-m limit|string|multiport|state|mac 设置 限速|域名|多端口|tcp状态<ul>
+<li>–limit 50k/s 限速</li>
+<li>–string “<a href="http://www.abc.com&quot;" target="_blank" rel="noopener">www.abc.com&quot;</a> 匹配域名</li>
+<li>–state NEW|RELATED|ESTABLISHED|INVALID 匹配链接状态</li>
+<li>–mac-source MAC 匹配 MAC 地址</li>
+</ul>
+</li>
+<li>-j ACCEPT|DROP|SNAT|DNAT|MASQUERADE 该规则的动作 允许|阻止|源地址转换|目的地址转换|源地址动态转换</li>
+</ul>
+<h4 id="备份与恢复-iptables"><a href="#备份与恢复-iptables" class="headerlink" title="备份与恢复 iptables"></a>备份与恢复 iptables</h4><pre><code>iptables-save &gt; filename #备份
+iptables-restore &lt; filename #恢复</code></pre><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><h4 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h4><ol>
+<li>cp file newfile</li>
+<li>cp file1 file2 dir</li>
+<li>cp -r dir dir</li>
+<li>mv file newfile</li>
+<li>pwd 显示当前目录</li>
+<li>chmod 修改文件权限</li>
+<li>chown 修改文件所有权</li>
+<li>chgrp 修改文件所属组</li>
+<li>stat file 文件属性 Access time 使用时间 Modfiy 修改内容时间 Change 修改属性时间</li>
+<li>tail|head 查看文件末尾|头</li>
+<li>find 位置 -name|user|type 条件  查找 名称|所属用户|类型 符合的文件</li>
+<li>grep file 内容 查找文件内容</li>
+<li>less|more 分屏查看文件 可向上滚动|向下滚动</li>
+<li>wc -l|w|c|m 统计文件 行数|单词数|大小|字符数</li>
+<li>touch file 创建文件</li>
+<li>diff file1 file2 比较文件不同</li>
+<li>cut -b|c|d 按 字节|字符|分隔符 来切割文件行</li>
+<li>paste -d 字符 file1 file2 按字符间隔拼接两文件</li>
+<li>comm file1 file2 比较两文件出现内容</li>
+<li>sort -r file 排序文件内容 -r反向排序</li>
+<li>uniq file 删除重复的行</li>
+<li>join file1 file2 按列合并 需要排序</li>
+<li>colrm 起始列 终止列 删除列</li>
+</ol>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://ruri.chiyuki.moe/2018/01/04/linux/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://ruri.chiyuki.moe/2018/01/04/linux/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//rurichiyuki.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/01/10/mayoi/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/12/30/akunin/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="千雪琉璃's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        mail@chiyuki.moe
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:mail@chiyuki.moe" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/06/">六月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">五月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/10/">十月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/08/">八月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">六月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">五月 2019<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">一月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/%E5%85%AC%E5%91%8A/">公告<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%97%A5%E5%BF%97/">日志<span class="sidebar_archives-count">44</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%AE%A3%E5%91%8A/">讣告<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时间轴">
+                
+                    <i class="material-icons sidebar-material-icons">timeline</i>
+                
+                时间轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="千雪的朋友们">
+                
+                    <i class="material-icons sidebar-material-icons">group</i>
+                
+                千雪的朋友们
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+        <li>
+            <a href="/about" title="关于千雪">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于千雪
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/atom.xml" title="RSS">
+                
+                    <i class="material-icons sidebar-material-icons">rss_feed</i>
+                
+                RSS
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://chiyukiruri.github.io" target="_blank" rel="noopener" title="Github Pages">
+                
+                    <i class="material-icons sidebar-material-icons">link</i>
+                
+                Github Pages
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/ruri_chiyuki" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/chiyukiruri" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Chiyuki Ruri's Blog
+            
+                <br>
+                
+                    Chiyukiruri's Blog - 千雪琉璃的小窝
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//rurichiyuki.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2017;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

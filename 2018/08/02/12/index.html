@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://rurichiyuki.disqus.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            愿你们一切都好 | 
+        
+        Chiyuki Ruri&#39;s Blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="愿你们一切都好……关于羽毛毛的一些事情,以及每次都会发生的事情……以下仅为个人观点，有哪些不对的，还请评论中指出，谢谢。">
+    <meta name="keywords" content="chiyukiruri 千雪琉璃 药娘 吃糖 技术,记录,心情,羽毛">
+    <meta name="theme-color" content="#c47ec6">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #8f0074;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #c47ec6 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #c47ec6 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #c47ec6 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #8f0074;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Chiyuki Ruri&#39;s Blog">
+    <meta name="msapplication-starturl" content="https://ruri.chiyuki.moe/2018/08/02/12/">
+    <meta name="msapplication-navbutton-color" content="#c47ec6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Chiyuki Ruri&#39;s Blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://ruri.chiyuki.moe/2018/08/02/12/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="愿你们一切都好 | Chiyuki Ruri&#39;s Blog">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="愿你们一切都好……关于羽毛毛的一些事情,以及每次都会发生的事情……以下仅为个人观点，有哪些不对的，还请评论中指出，谢谢。">
+    <meta property="og:article:tag" content="记录"> <meta property="og:article:tag" content="心情"> <meta property="og:article:tag" content="羽毛"> 
+
+    
+        <meta property="article:published_time" content="Thu Aug 02 2018 00:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Sat Aug 29 2020 21:54:02 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://ruri.chiyuki.moe/2018/08/02/12/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://ruri.chiyuki.moe/2018/08/02/12/index.html",
+    "headline": "愿你们一切都好",
+    "datePublished": "Thu Aug 02 2018 00:00:00 GMT+0800",
+    "dateModified": "Sat Aug 29 2020 21:54:02 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "千雪琉璃",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "千雪琉璃的小窝"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Chiyuki Ruri&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",记录,心情,羽毛chiyukiruri 千雪琉璃 药娘 吃糖 技术",
+    "description": "愿你们一切都好……关于羽毛毛的一些事情,以及每次都会发生的事情……以下仅为个人观点，有哪些不对的，还请评论中指出，谢谢。",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-110021192-1', 'auto');ga('send', 'pageview');
+</script>
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+        
+            <meta name="theme-color" content="#c47ec6">
+        
+            <meta name="msapplication-navbutton-color" content="#c47ec6">
+        
+            <meta name="apple-mobile-web-app-capable" content="yes">
+        
+            <meta name="apple-mobile-web-app-status-bar-style" content="#c47ec6">
+        
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#讣告"><span class="post-toc-number">1.</span> <span class="post-toc-text">讣告</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#在此之前想说的一些事情"><span class="post-toc-number">2.</span> <span class="post-toc-text">在此之前想说的一些事情</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于我是哪派？"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">关于我是哪派？</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#同情表示支持理解的"><span class="post-toc-number">3.</span> <span class="post-toc-text">同情表示支持理解的</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#觉得活该或者为什么不早死"><span class="post-toc-number">4.</span> <span class="post-toc-text">觉得活该或者为什么不早死</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#羽毛的过去"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">羽毛的过去</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#我和羽毛的经历"><span class="post-toc-number">5.</span> <span class="post-toc-text">我和羽毛的经历</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于-Neko-的事情"><span class="post-toc-number">6.</span> <span class="post-toc-text">关于 Neko 的事情</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#结束"><span class="post-toc-number">7.</span> <span class="post-toc-text">结束</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/images/12.jpg)">
+    
+            <p class="article-headline-p">
+                愿你们一切都好
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>千雪琉璃</strong>
+        <span>8月 02, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/%E5%BF%83%E6%83%85/" rel="tag">心情</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/%E7%BE%BD%E6%AF%9B/" rel="tag">羽毛</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=愿你们一切都好&url=https://ruri.chiyuki.moe/2018/08/02/12/index.html&via=千雪琉璃" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://ruri.chiyuki.moe/2018/08/02/12/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://ruri.chiyuki.moe/2018/08/02/12/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://ruri.chiyuki.moe/2018/08/02/12/index.html&text=愿你们一切都好" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>愿你们一切都好……关于羽毛毛的一些事情,以及每次都会发生的事情……<br>以下仅为个人观点，有哪些不对的，还请评论中指出，谢谢。</p>
+<a id="more"></a>
+
+
+
+<p><strong>如果愿意破口大骂也没有关系，毕竟每个人都有情绪的，但是希望其他人记住，他只是在骂我，和你们没有任何关系，请不要在这里相互打架……</strong></p>
+<h2 id="讣告"><a href="#讣告" class="headerlink" title="讣告"></a>讣告</h2><p><strong>2018年8月2日 17点19分 ，通过电话向羽毛父亲询问得知：</strong><br><strong>2018年7月30日晚 羽毛 在家服药自杀身亡，法医最终判定死亡时间为 2018年7月31日凌晨两点</strong><br><strong>R.I.P.</strong><br></p>
+<blockquote>
+<p>羽毛信息：<br><a href="https://twitter.com/zhangyubaka" target="_blank" rel="noopener">Twitter</a><br><a href="https://oao.moe/" target="_blank" rel="noopener">Blog</a></p>
+</blockquote>
+<h2 id="在此之前想说的一些事情"><a href="#在此之前想说的一些事情" class="headerlink" title="在此之前想说的一些事情"></a>在此之前想说的一些事情</h2><p>大家都在今天知道了某件不幸的事情吧……然而每次关于羽毛的问题一旦出现，就会变成这样，网上分为两派大战，准确的说是三派：<code>同情表示支持理解的</code>，<code>觉得活该或者为什么不早死</code>，<code>吃瓜群众随便找一派参战的</code><br>第三种就不说什么了，主要是想说说前两种……所以可能会有些冒犯大家，但是只是不想看到每次都这样……</p>
+<h3 id="关于我是哪派？"><a href="#关于我是哪派？" class="headerlink" title="关于我是哪派？"></a>关于我是哪派？</h3><p>大概是所谓的老好人吧，两边都支持，但是两边都有不支持的观点……说白了就是自恋，总以为自己知道的多……<br>嘛，随你们怎么定义了，自己给自己下定义感觉有失公正</p>
+<p>要说自己和羽毛认识的时间，从她服用氰化钾那次就认识了，也和她一起住过，但时间并不长，也同时和 Neko 一起呆过，一起和羽毛自杀过，一起寻找过 Neko。<br>自己也是 MTF ，重度抑郁症 ， BPD ，现在又多了个 PTSD……掀桌！</p>
+<h2 id="同情表示支持理解的"><a href="#同情表示支持理解的" class="headerlink" title="同情表示支持理解的"></a>同情表示支持理解的</h2><p>大概这种是有以下几种人组成吧：</p>
+<ol>
+<li>和羽毛呆过，但是时间不长，被其感染了</li>
+<li>只是和羽毛在网上接触过</li>
+<li>突然看到有人去世了，还是个 MTF ，抑郁症患者，过去很悲惨什么的</li>
+<li>吃瓜群众，跟风凑热闹</li>
+</ol>
+<p>第一种人吧，接触的时间短，只对羽毛有个初步印象，我也是从这个时期过来的，其实说的不好听一点，她真的很会煽动人，所以会让你有一种她很可怜，需要帮助，让你善心大发那种，谁伤害她我就去拼命什么的…… 不过这个也是正常现象，毕竟不熟的话大家都觉得挺可怜的。 </p>
+<p>第二种人和第一种差不多，而且羽毛的网络形象和现实形象差了很多很多，接触过的大概都能明白。再加上现在 MTF 被迫害的问题也突然暴增，以及各种抑郁症自杀的，会让你从心中感到一种同情，正常现象……</p>
+<p>第三种人和第四种人……完全属于跟风凑热闹，什么死者为大一类的理由，还有搅浑水的，第三种还存在着一些蹭热度的，也不乏一些打着维护 LGBT 群体权益的幌子（这里并不是指那些真正的为了LGBT群体做贡献的人），来蹭热度的。</p>
+<p>这派人一个共通点，接触时间短，或者是没有真正的见到羽毛的本性，所以会有这样的想法，我觉得这些存在也很正常。毕竟中文圈大部分是中国用户，或多或少的都会受到些传统文化的潜移默化（并没有说传统文化不好）</p>
+<h2 id="觉得活该或者为什么不早死"><a href="#觉得活该或者为什么不早死" class="headerlink" title="觉得活该或者为什么不早死"></a>觉得活该或者为什么不早死</h2><p>这些人大概由以下几种人组成：</p>
+<ol>
+<li>和羽毛长期生活过，并的确发现了这个是个问题儿童</li>
+<li>一些就是过的挺好特别奉行“可怜之人必有可恨之处”这类思想的</li>
+<li>还有一些是因为 Neko 的事情造成的</li>
+<li><strong>知道一些羽毛之前的事情的，然后从此就恨之入骨的。</strong></li>
+<li>依然是吃瓜群众，跟风凑热闹</li>
+</ol>
+<p>第一种人，我很赞同你的说法，因为你一旦和羽毛真正的在一起生活过，而且时间足够，给她天天做饭，陪着她，你就真的会发现她是个问题儿童（顺带我也是个大龄问题儿童）</p>
+<p>第二种，我没什么好评论的，每个人自己奉行的思想是不一样的，你这么认为我也没办法。</p>
+<p>第三种，曾经有人说过 Neko 就是羽毛害死的，所以对她恨之入骨……但是关于 Neko 的事情，我会在下面说。</p>
+<p>第四种，也是别人提出来了，我才加上的，本来不想提这些事情的这种情况比较复杂，打算下面说</p>
+<p>第五种，依然没什么好说的，同上。</p>
+<p>这派人大概也是陪了羽毛好久了，甚至还有接过来住关心她，每次自杀的时候还会想办法营救她的人，但后来发现本性不改，而且真的是个问题儿童，怎么说都不改。关于 Neko 的事情我依然想放到最后单独说。</p>
+<h3 id="羽毛的过去"><a href="#羽毛的过去" class="headerlink" title="羽毛的过去"></a>羽毛的过去</h3><p>这是对第四种人的解释吧……  </p>
+<p>毕竟还是一起生活过的，以前的她那些事情我也知道，比如：全国找人一起约自杀，送药上门帮忙自杀，在别人家里借别人的厨房干那些事情，甚至以前在美国每天做过的那些事情……</p>
+<p>我知道……会有一些人因为她没有最基础的是非观，做什么根本不会认为自己是错的，伤害了一些人，比如一些人在意的人，被她诱导自杀了，肯定会对她恨之入骨吧，巴不得她赶紧死。</p>
+<p>嗯……以前我也是一个这样的人，没有基础的是非观，我也曾经给别人教唆过自杀，帮忙搞器材，借别人厨房来做这种事情倒是没做过，自己有自己的实验室，就不麻烦别人了。还有就像有人说羽毛一样，别人从泥潭里把她拉出来，她还会自己跳回去，然后还顺便把别人也一起拉下去。不过现在，我已经走出来了，但是对于以前伤害过的人，我除了道歉也什么都做不到了……</p>
+<p>也是这些原因吧，导致了一些人对她的认识直接停留在了这个时间段，一直巴不得她死，那些实质性的被伤害到了的，巴不得她死我也能理解，因为她的确做了错事，还不认为自己错了。这种人……嗯，如果你们觉得她死了，你们很开心，或者少了阴影，也好……因为做什么也不能弥补以前犯过的错误了。</p>
+<p><strong>但是，对于只是知道她这种情况的人，然后认识就一直停留在以前的情况下的，我要说一声，真的要很感谢 Neko 吧，她和 Neko 在一起之后，也变了很多很多，至少，不会去劝别人自杀，给别人提供药品，在别人有自杀情绪的时候还会拉他一把。</strong></p>
+<p>有人问我，你觉得带她去一两次医院就能解决问题吗？不，我也不这么想，所以我才想把她接过来，持续的进行治疗。而且，要是没有 Neko 的话，我也不认为我接过来进行治疗会有多大效果。</p>
+<p>可惜，一切都毁在了 Neko 被带走的那天晚上……从那时起我就知道没有机会了……</p>
+<h2 id="我和羽毛的经历"><a href="#我和羽毛的经历" class="headerlink" title="我和羽毛的经历"></a>我和羽毛的经历</h2><p>我对羽毛，最开始只是网络上认识，也和第一派一样，感觉是个很好的人，活着挺辛苦的，需要别人来关心爱护。<br>然后呢，就和她见了第一次面，是约在北京大学第六医院看病的时候，当时我们两个人在门口熬夜排队，我还去旁边的饭店租了两个椅子坐着，也交谈了一些东西，虽然那次挂号是失败的……  </p>
+<p>后来也就是一直在网上交流，的确，从各个方面发现了她偏执，固执己见，自杀倾向极其严重，情绪不稳，引用一个人的话，高兴了就让你摸摸头，不高兴了理你都不理你，而且极其不听劝，甚至有一种自杀为乐的感觉。</p>
+<p>知道了她和 Neko 住在了一起，我就去了上海找她们，在一起生活的几天中，我发现了更多的问题，觉得她必须要进行正规的治疗了，她已经不是 MTF 那种正常的想法了。就是那次，我见到了羽毛的母亲，和她母亲也聊了一会儿，让我感觉到这个家庭可能还是没有意识到问题的严重性，或者意识到了，羽毛也不听他们劝。因为大部分 MTF 都不被家里接受吧，会本能的对家里产生一种厌恶的感情。但是对同类人的意见还是比较容易接受的。</p>
+<p>于是我就想，能不能把她从这个歪路上带回正轨，我干脆就带她去上海精神卫生中心先把她和 neko 的性别焦虑解决清了，至少能让她们心情上好受点。想必，结果大家都知道了，上精卫没能给出她们的易性症证明，主要还是年龄和家长陪同的一些的问题。  </p>
+<p>接下来我就带她们去北京大学第六医院去开（因为我已经有了北六院的易性症证明，对北六院但流程还是比较清楚的），由于北六院要求三个医生诊断才可以给正式诊断，但是当时临近春节，就只拿到了两个医生的临时诊断，但是也可以看出来，她们心情改善了很多，和我当时一样，就有一种终于有人理解我了的感觉。  </p>
+<p>春节了嘛，顺便就把她和 Neko 带到了我这里过春节，很开心，大家玩的都很好，一起做饭什么的，至少这几天里，我真的明显感觉到了，上次和她在一起的那种固执，偏执少了很多，情绪也好了很多。因为她不太会交流的原因吧，和家里人总是吵架，我那次还见到了她和她母亲吵，大概也发现了他家里人不太重视这个事情，重视的话早就应该带医院，帮她解决她的第一需求，而不是想各种办法反对。</p>
+<p>春节结束后她就和 Neko 去云南了，后来不知道发生了些什么，自己当时正好也是家里极度反对，结果心情不好，就约一起自杀了，自己当时也很自私吧，给她们配的药都不是致死量，给自己配了二倍致死量……结果当晚被报警，我被救护车拉走急救，也没什么事情了。然后也清醒了，这样不是个办法，正好酒店那边不让她们在这里住了，我就打算把她们接到我这边来住，失败了呢，丢掉了 Neko ……，然后两个人就分开了，一直到现在……</p>
+<p>自己一直想把她从那个深渊拉出来，可惜失败了，我觉得虽然她的确有很多很多的问题，但我觉得还是更多人处理方法不对，导致了发现了她这个问题儿童之后就开始厌恶她，陪着她就能温暖她？给她做饭就能让她高兴？这只是表面的，和她生活了多久，受了多少伤我不管，你坚持不下去了可以放弃，也可以去恨他，<strong>但是我就想问问，和她母亲真正谈过这些事情，并带她去正规医疗机构去解决问题的……你们第二派的有几个人做到了？！</strong></p>
+<h2 id="关于-Neko-的事情"><a href="#关于-Neko-的事情" class="headerlink" title="关于 Neko 的事情"></a>关于 Neko 的事情</h2><p>这件事我不想说太多，很多人说：“羽毛害死了 Neko ，她早就该死”，对于这种人……没在现场不知道到底怎么回事的都给我闭嘴！！  </p>
+<p>那天晚上，在虹桥机场，就是我带她们要来我这里，好好生活，马上不就是能拿到正式证明了嘛，羽毛家里也同意拿到正式证明之后就帮她公证材料，手术费虽然不管，但至少材料问题能解决清。</p>
+<p>然后不知怎么回事，Neko 的家长居然找到了我们，要强行带走 Neko 。至于 Neko 的家长，我们心理都很清楚，带走就是死路一条……，羽毛就和 Neko 父亲打在一起，最后羽毛右眼失明，还被公安不承认，啊哈哈哈！（不吐槽这样的法治国家了），最后还是把 Neko 带走了，结果大家也都知道了，我和羽毛也尽力了寻找 Neko 但是并没找到……，我只能说 Neko 的死，是她家人自己造成的，和羽毛没有什么关系，为什么？两个人生活了130多天啊，回云南的时候还是那么的开心，在我这里也过的那么的好，被家人带回去的短短一星期内，发生了什么？啊？！发生了什么啊！！</p>
+<p>这件事对我和她同时造成了很大的打击，然后我也没有什么精力去管羽毛那边了……（具体情况参考我以前的博文）</p>
+<p>然后也是上面所说的第二部分的第四种人，和羽毛，neko 一起自杀的那天是我在的现场，谁提出来的？ 很抱歉，是 Neko 提出来的，羽毛极力阻止过，最终没有办法只能同意了，但是要一起死，而且…那天药是我带过去的…，因为我心情也不好，也可以说是我害死了 Neko ，我相信这些事情你们很多知道羽毛情况就断了联系的人不知道的吧……</p>
+<h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2><p>我只是希望大家一切都好，争论这些没有意义，每个人都只是根据自己的片面理解去发表自己的观点。</p>
+<p>也有人说这不是我该关心的，对呀，不是我该关心的……不是那些只是了解了表面的人去关心的，也不是那些恨之入骨的人会关心的，更不是那些巴不得她死的人会关心的，<strong>那……我问一下，该由谁来关心呢？眼睁睁的看着她恶化下去伤害更多的人吗？</strong></p>
+<p>好吧……我知道我多管闲事了，自己性格所趋，没办法，更多的是以前的经历和她很像，后来走了出来，也希望她能够走出来……没有谁做的对，也没有谁做的错，你们也只是根据自己的印象来判断的，只是想说，如果后来没有再继续接触的，你们还是更新一下印象吧……</p>
+<p>还有说被感性突破理性的，的确，这种人存在着，但是过于理性的想想，你这么理性的话，做到了些什么吗？的确，这个世界没有任何人是必须或有义务的去帮助羽毛的，但是，在没有做过之前，还是考虑一下自己说的是不是合适吧。</p>
+<p>过于感性的，你们真正的体验过羽毛的本性了吗？被一起约过自杀吗？我也不敢说我体验过了，也许这些只有真正的体验过的人才知道吧。</p>
+<p>为死者同情的，没有错误，人之常情。对羽毛恨之入骨的，我知道，接触久了就那种感觉，你做的很好，至少你给了她陪伴，谢谢。我知道大部分人坚持不下去了，所以没有真正的做到帮助她的地方。我做到了吗？也许没有……  </p>
+<p>希望大家一切都平安，都能快快乐的生活，这样的争论……最好没有……</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://ruri.chiyuki.moe/2018/08/02/12/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://ruri.chiyuki.moe/2018/08/02/12/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//rurichiyuki.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/08/15/13/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/07/30/11/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="千雪琉璃's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        mail@chiyuki.moe
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:mail@chiyuki.moe" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/06/">六月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">五月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/10/">十月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/08/">八月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">六月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">五月 2019<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">一月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/%E5%85%AC%E5%91%8A/">公告<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%97%A5%E5%BF%97/">日志<span class="sidebar_archives-count">44</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%AE%A3%E5%91%8A/">讣告<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时间轴">
+                
+                    <i class="material-icons sidebar-material-icons">timeline</i>
+                
+                时间轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="千雪的朋友们">
+                
+                    <i class="material-icons sidebar-material-icons">group</i>
+                
+                千雪的朋友们
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+        <li>
+            <a href="/about" title="关于千雪">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于千雪
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/atom.xml" title="RSS">
+                
+                    <i class="material-icons sidebar-material-icons">rss_feed</i>
+                
+                RSS
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://chiyukiruri.github.io" target="_blank" rel="noopener" title="Github Pages">
+                
+                    <i class="material-icons sidebar-material-icons">link</i>
+                
+                Github Pages
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/ruri_chiyuki" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/chiyukiruri" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Chiyuki Ruri's Blog
+            
+                <br>
+                
+                    Chiyukiruri's Blog - 千雪琉璃的小窝
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//rurichiyuki.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2017;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

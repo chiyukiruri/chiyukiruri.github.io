@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://rurichiyuki.disqus.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            多媒体复习资料 | 
+        
+        Chiyuki Ruri&#39;s Blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="chiyukiruri 千雪琉璃 药娘 吃糖 技术,考试,复习,多媒体">
+    <meta name="theme-color" content="#c47ec6">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #8f0074;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #c47ec6 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #c47ec6 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #c47ec6 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #8f0074;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Chiyuki Ruri&#39;s Blog">
+    <meta name="msapplication-starturl" content="https://ruri.chiyuki.moe/2017/11/08/multimedia/">
+    <meta name="msapplication-navbutton-color" content="#c47ec6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Chiyuki Ruri&#39;s Blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://ruri.chiyuki.moe/2017/11/08/multimedia/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="多媒体复习资料 | Chiyuki Ruri&#39;s Blog">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="考试"> <meta property="og:article:tag" content="复习"> <meta property="og:article:tag" content="多媒体"> 
+
+    
+        <meta property="article:published_time" content="Wed Nov 08 2017 08:03:22 GMT+0800">
+        <meta property="article:modified_time" content="Sat Aug 29 2020 21:54:02 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://ruri.chiyuki.moe/2017/11/08/multimedia/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://ruri.chiyuki.moe/2017/11/08/multimedia/index.html",
+    "headline": "多媒体复习资料",
+    "datePublished": "Wed Nov 08 2017 08:03:22 GMT+0800",
+    "dateModified": "Sat Aug 29 2020 21:54:02 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "千雪琉璃",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "千雪琉璃的小窝"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Chiyuki Ruri&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",考试,复习,多媒体chiyukiruri 千雪琉璃 药娘 吃糖 技术",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-110021192-1', 'auto');ga('send', 'pageview');
+</script>
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+        
+            <meta name="theme-color" content="#c47ec6">
+        
+            <meta name="msapplication-navbutton-color" content="#c47ec6">
+        
+            <meta name="apple-mobile-web-app-capable" content="yes">
+        
+            <meta name="apple-mobile-web-app-status-bar-style" content="#c47ec6">
+        
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#多媒体技术概论"><span class="post-toc-number">1.</span> <span class="post-toc-text">多媒体技术概论</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#多媒体技术英文原文是什么"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">多媒体技术英文原文是什么</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#多媒体种类有哪些"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">多媒体种类有哪些</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#MPC标准指的是什么"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">MPC标准指的是什么</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#列举你所知道的多媒体制作软件"><span class="post-toc-number">1.0.4.</span> <span class="post-toc-text">列举你所知道的多媒体制作软件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#什么是多媒体技术，主要特点是什么"><span class="post-toc-number">1.0.5.</span> <span class="post-toc-text">什么是多媒体技术，主要特点是什么</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#如何理解多媒体技术是人机交互方法的一次革命"><span class="post-toc-number">1.0.6.</span> <span class="post-toc-text">如何理解多媒体技术是人机交互方法的一次革命</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#你所知道的多媒体技术标准有哪些"><span class="post-toc-number">1.0.7.</span> <span class="post-toc-text">你所知道的多媒体技术标准有哪些</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#多媒体技术的应用对人类社会的影响"><span class="post-toc-number">1.0.8.</span> <span class="post-toc-text">多媒体技术的应用对人类社会的影响</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数字音频处理技术"><span class="post-toc-number">2.</span> <span class="post-toc-text">数字音频处理技术</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#音频信号的频率范围大约是多少，话音信号的频率范围大约是多少"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">音频信号的频率范围大约是多少，话音信号的频率范围大约是多少</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#什么叫采样？什么叫量化？线性量化和非线性量化？"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">什么叫采样？什么叫量化？线性量化和非线性量化？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#采样频率根据什么原则来确定？"><span class="post-toc-number">2.0.3.</span> <span class="post-toc-text">采样频率根据什么原则来确定？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#样本精度位8位的信噪比等于多少分贝？"><span class="post-toc-number">2.0.4.</span> <span class="post-toc-text">样本精度位8位的信噪比等于多少分贝？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#什么叫做u律压扩？什么叫做A律压扩？"><span class="post-toc-number">2.0.5.</span> <span class="post-toc-text">什么叫做u律压扩？什么叫做A律压扩？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#自适应脉冲编码调制的基本思想是什么？"><span class="post-toc-number">2.0.6.</span> <span class="post-toc-text">自适应脉冲编码调制的基本思想是什么？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#差分脉冲编码调制的基本思想是什么？"><span class="post-toc-number">2.0.7.</span> <span class="post-toc-text">差分脉冲编码调制的基本思想是什么？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#选择采样频率为22-05khz和样本精度16位的录音参数。在不采用压缩技术的情况下，录制2分钟的立体声需要多少存储空间。"><span class="post-toc-number">2.0.8.</span> <span class="post-toc-text">选择采样频率为22.05khz和样本精度16位的录音参数。在不采用压缩技术的情况下，录制2分钟的立体声需要多少存储空间。</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数字图像技术"><span class="post-toc-number">3.</span> <span class="post-toc-text">数字图像技术</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#阐述矢量图形与位图图像的区别"><span class="post-toc-number">3.0.1.</span> <span class="post-toc-text">阐述矢量图形与位图图像的区别</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#图像分辨率的单位是什么？阐述其意义。"><span class="post-toc-number">3.0.2.</span> <span class="post-toc-text">图像分辨率的单位是什么？阐述其意义。</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#哪种格式的图像文件体积最小？"><span class="post-toc-number">3.0.3.</span> <span class="post-toc-text">哪种格式的图像文件体积最小？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#了解常见的图像模式？"><span class="post-toc-number">3.0.4.</span> <span class="post-toc-text">了解常见的图像模式？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#图像的基本属性？"><span class="post-toc-number">3.0.5.</span> <span class="post-toc-text">图像的基本属性？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#图像文件大小的计算"><span class="post-toc-number">3.0.6.</span> <span class="post-toc-text">图像文件大小的计算</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#多媒体数据压缩技术"><span class="post-toc-number">4.</span> <span class="post-toc-text">多媒体数据压缩技术</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#熵的概念，什么是信源的熵？"><span class="post-toc-number">4.0.1.</span> <span class="post-toc-text">熵的概念，什么是信源的熵？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#有损压缩和无损压缩"><span class="post-toc-number">4.0.2.</span> <span class="post-toc-text">有损压缩和无损压缩</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#指出霍夫曼压缩编码的方法、特点"><span class="post-toc-number">4.0.3.</span> <span class="post-toc-text">指出霍夫曼压缩编码的方法、特点</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#指出RLE压缩编码的特点"><span class="post-toc-number">4.0.4.</span> <span class="post-toc-text">指出RLE压缩编码的特点</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#指出词典压缩编码的原理"><span class="post-toc-number">4.0.5.</span> <span class="post-toc-text">指出词典压缩编码的原理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#具备什么条件才能进行数据压缩"><span class="post-toc-number">4.0.6.</span> <span class="post-toc-text">具备什么条件才能进行数据压缩</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#冗余指的是什么"><span class="post-toc-number">4.0.7.</span> <span class="post-toc-text">冗余指的是什么</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#指出三种冗余"><span class="post-toc-number">4.0.8.</span> <span class="post-toc-text">指出三种冗余</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#动画原理技术"><span class="post-toc-number">5.</span> <span class="post-toc-text">动画原理技术</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#世界上主要的彩色电视制式是哪几种"><span class="post-toc-number">5.0.1.</span> <span class="post-toc-text">世界上主要的彩色电视制式是哪几种</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#隔行扫描和非隔行扫描的意义是什么"><span class="post-toc-number">5.0.2.</span> <span class="post-toc-text">隔行扫描和非隔行扫描的意义是什么</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#动画的原理"><span class="post-toc-number">5.0.3.</span> <span class="post-toc-text">动画的原理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#阴极射线管的组成"><span class="post-toc-number">5.0.4.</span> <span class="post-toc-text">阴极射线管的组成</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#液晶显示器的技术指标"><span class="post-toc-number">5.0.5.</span> <span class="post-toc-text">液晶显示器的技术指标</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#多媒体的存储技术"><span class="post-toc-number">6.</span> <span class="post-toc-text">多媒体的存储技术</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CD盘的组成"><span class="post-toc-number">6.0.1.</span> <span class="post-toc-text">CD盘的组成</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#光盘的记录原理"><span class="post-toc-number">6.0.2.</span> <span class="post-toc-text">光盘的记录原理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#DVD的存储容量是怎么提高的"><span class="post-toc-number">6.0.3.</span> <span class="post-toc-text">DVD的存储容量是怎么提高的</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#激光唱盘采样频率如何确定"><span class="post-toc-number">6.0.4.</span> <span class="post-toc-text">激光唱盘采样频率如何确定</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#什么是通道编码"><span class="post-toc-number">6.0.5.</span> <span class="post-toc-text">什么是通道编码</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#为什么CD盘中的EFM是8-14"><span class="post-toc-number">6.0.6.</span> <span class="post-toc-text">为什么CD盘中的EFM是8-14</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#光盘的读写原理"><span class="post-toc-number">6.0.7.</span> <span class="post-toc-text">光盘的读写原理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CD盘上的物理格式，基本结构"><span class="post-toc-number">6.0.8.</span> <span class="post-toc-text">CD盘上的物理格式，基本结构</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CD和DVD盘所用的校验方法"><span class="post-toc-number">6.0.9.</span> <span class="post-toc-text">CD和DVD盘所用的校验方法</span></a></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/images/MultiMedia.png)">
+    
+            <p class="article-headline-p">
+                多媒体复习资料
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>千雪琉璃</strong>
+        <span>11月 08, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/%E5%A4%8D%E4%B9%A0/" rel="tag">复习</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/%E5%A4%9A%E5%AA%92%E4%BD%93/" rel="tag">多媒体</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/%E8%80%83%E8%AF%95/" rel="tag">考试</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=多媒体复习资料&url=https://ruri.chiyuki.moe/2017/11/08/multimedia/index.html&via=千雪琉璃" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://ruri.chiyuki.moe/2017/11/08/multimedia/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://ruri.chiyuki.moe/2017/11/08/multimedia/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://ruri.chiyuki.moe/2017/11/08/multimedia/index.html&text=多媒体复习资料" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>因为明天就要考试啦，所以就来整理一篇复习资料，放 Blog 上比较方便……抄？<br>估计没有什么人考这个吧～</p>
+<h2 id="多媒体技术概论"><a href="#多媒体技术概论" class="headerlink" title="多媒体技术概论"></a>多媒体技术概论</h2><h4 id="多媒体技术英文原文是什么"><a href="#多媒体技术英文原文是什么" class="headerlink" title="多媒体技术英文原文是什么"></a>多媒体技术英文原文是什么</h4><p>MultiMedia</p>
+<h4 id="多媒体种类有哪些"><a href="#多媒体种类有哪些" class="headerlink" title="多媒体种类有哪些"></a>多媒体种类有哪些</h4><ol>
+<li>感觉媒体 直接作用于人的感官，产生感觉的一类媒体</li>
+<li>表示媒体 各种编码方式，图像编码，声音编码</li>
+<li>表现媒体 感觉媒体与计算机的界面，键盘，显示器，扬声器</li>
+<li>存储媒体 保存表示媒体的介质，光盘</li>
+<li>传输媒体 传输的物理载体，光纤，电缆</li>
+</ol>
+<h4 id="MPC标准指的是什么"><a href="#MPC标准指的是什么" class="headerlink" title="MPC标准指的是什么"></a>MPC标准指的是什么</h4><p>MPC标准是指多媒体个人计算机标准，共有三项基本标准 MPC-1/2/3<br>制定了对个人计算机增加多媒体功能缩学的软硬件进行最低标准的规范，规定了多媒体个人计算机硬件设备和操作系统等的量化标准</p>
+<h4 id="列举你所知道的多媒体制作软件"><a href="#列举你所知道的多媒体制作软件" class="headerlink" title="列举你所知道的多媒体制作软件"></a>列举你所知道的多媒体制作软件</h4><p>Word，PhothoShop，AutoCAD，3DS MAX，Adobe Audio，Adobe AfterEffect</p>
+<h4 id="什么是多媒体技术，主要特点是什么"><a href="#什么是多媒体技术，主要特点是什么" class="headerlink" title="什么是多媒体技术，主要特点是什么"></a>什么是多媒体技术，主要特点是什么</h4><p>多媒体技术是利用计算机对文字，图形，图像，动画，音频,视频等多种信息进行综合处理，建立逻辑关系和人机交互作用的产物。其特点有，集成性，交互性，实时性，数字化。</p>
+<h4 id="如何理解多媒体技术是人机交互方法的一次革命"><a href="#如何理解多媒体技术是人机交互方法的一次革命" class="headerlink" title="如何理解多媒体技术是人机交互方法的一次革命"></a>如何理解多媒体技术是人机交互方法的一次革命</h4><p>早期计算机仅可使用纸带，命令等方式操作，增加了用户的学习成本，使计算机不易用。图形交互界面出现后，用户可通过鼠标点击屏幕上的各种操作按钮进行交互，极大的降低了学习成本和操作难度，使计算机变得简单易用。</p>
+<h4 id="你所知道的多媒体技术标准有哪些"><a href="#你所知道的多媒体技术标准有哪些" class="headerlink" title="你所知道的多媒体技术标准有哪些"></a>你所知道的多媒体技术标准有哪些</h4><p>MPC- 1/2/3，CD-I，CDDA，DVI</p>
+<h4 id="多媒体技术的应用对人类社会的影响"><a href="#多媒体技术的应用对人类社会的影响" class="headerlink" title="多媒体技术的应用对人类社会的影响"></a>多媒体技术的应用对人类社会的影响</h4><p>教育，可以更形象的教学，人工智能模拟，影视方面可以提供更多的影视特效，医疗方面可以使用远程诊断，远程手术，商业广告方面可以有特技合成与大型演示等。</p>
+<h2 id="数字音频处理技术"><a href="#数字音频处理技术" class="headerlink" title="数字音频处理技术"></a>数字音频处理技术</h2><h4 id="音频信号的频率范围大约是多少，话音信号的频率范围大约是多少"><a href="#音频信号的频率范围大约是多少，话音信号的频率范围大约是多少" class="headerlink" title="音频信号的频率范围大约是多少，话音信号的频率范围大约是多少"></a>音频信号的频率范围大约是多少，话音信号的频率范围大约是多少</h4><p>音频信号 20Hz<del>20000Hz，话音信号 100Hz</del>3100Hz</p>
+<h4 id="什么叫采样？什么叫量化？线性量化和非线性量化？"><a href="#什么叫采样？什么叫量化？线性量化和非线性量化？" class="headerlink" title="什么叫采样？什么叫量化？线性量化和非线性量化？"></a>什么叫采样？什么叫量化？线性量化和非线性量化？</h4><p>采样：对声音信号周期性取样。<br>量化：对声音信号波形振幅值的离散化。<br>线性量化：对声音信号的量化跨度全部一样。<br>非线性量化：根据频率的高低，量化跨度会发生变化。</p>
+<h4 id="采样频率根据什么原则来确定？"><a href="#采样频率根据什么原则来确定？" class="headerlink" title="采样频率根据什么原则来确定？"></a>采样频率根据什么原则来确定？</h4><p>根据奈奎斯特采样定理来确定，使量化后的信号恢复原始波形采样频率需为原始有用频率的 2 倍</p>
+<h4 id="样本精度位8位的信噪比等于多少分贝？"><a href="#样本精度位8位的信噪比等于多少分贝？" class="headerlink" title="样本精度位8位的信噪比等于多少分贝？"></a>样本精度位8位的信噪比等于多少分贝？</h4><p>每增加 1 位精度，信噪比增加 6db ，所以 8*6=48db</p>
+<h4 id="什么叫做u律压扩？什么叫做A律压扩？"><a href="#什么叫做u律压扩？什么叫做A律压扩？" class="headerlink" title="什么叫做u律压扩？什么叫做A律压扩？"></a>什么叫做u律压扩？什么叫做A律压扩？</h4><p>u律压扩根据参数u确定压缩程度,它反映最大量化间隔和最小量化间隔之比，u越大压缩程度越高，取 100~500 。A律压扩前一部分是线性的，其余部分与u律一致。</p>
+<h4 id="自适应脉冲编码调制的基本思想是什么？"><a href="#自适应脉冲编码调制的基本思想是什么？" class="headerlink" title="自适应脉冲编码调制的基本思想是什么？"></a>自适应脉冲编码调制的基本思想是什么？</h4><p>根据输入的信号幅度，自适应改变量化阶大小。可瞬时自适应或音节自适应。根据未量化的数据确定量化阶大小的叫前向自适应，根据量化后的数据确定的叫后向自适应。</p>
+<h4 id="差分脉冲编码调制的基本思想是什么？"><a href="#差分脉冲编码调制的基本思想是什么？" class="headerlink" title="差分脉冲编码调制的基本思想是什么？"></a>差分脉冲编码调制的基本思想是什么？</h4><p>从过去的样本来预测下一个样本的值，对预测得到的样本值与原始的样本值之差进行编码。</p>
+<h4 id="选择采样频率为22-05khz和样本精度16位的录音参数。在不采用压缩技术的情况下，录制2分钟的立体声需要多少存储空间。"><a href="#选择采样频率为22-05khz和样本精度16位的录音参数。在不采用压缩技术的情况下，录制2分钟的立体声需要多少存储空间。" class="headerlink" title="选择采样频率为22.05khz和样本精度16位的录音参数。在不采用压缩技术的情况下，录制2分钟的立体声需要多少存储空间。"></a>选择采样频率为22.05khz和样本精度16位的录音参数。在不采用压缩技术的情况下，录制2分钟的立体声需要多少存储空间。</h4><p>22050<em>2</em>2*60=529200 byte</p>
+<h2 id="数字图像技术"><a href="#数字图像技术" class="headerlink" title="数字图像技术"></a>数字图像技术</h2><h4 id="阐述矢量图形与位图图像的区别"><a href="#阐述矢量图形与位图图像的区别" class="headerlink" title="阐述矢量图形与位图图像的区别"></a>阐述矢量图形与位图图像的区别</h4><p>图形是由点线面到三维空间的黑白或彩色几何图，是一种矢量图，以一组描述点线面等的指令形式存在，放大不会失真。位图是由一个个像素点组成，放大会失真。</p>
+<h4 id="图像分辨率的单位是什么？阐述其意义。"><a href="#图像分辨率的单位是什么？阐述其意义。" class="headerlink" title="图像分辨率的单位是什么？阐述其意义。"></a>图像分辨率的单位是什么？阐述其意义。</h4><p>指图像大小，以水平和垂直像素表示。</p>
+<h4 id="哪种格式的图像文件体积最小？"><a href="#哪种格式的图像文件体积最小？" class="headerlink" title="哪种格式的图像文件体积最小？"></a>哪种格式的图像文件体积最小？</h4><p>JPEG</p>
+<h4 id="了解常见的图像模式？"><a href="#了解常见的图像模式？" class="headerlink" title="了解常见的图像模式？"></a>了解常见的图像模式？</h4><p>RGB，CMYK，INDEX，灰度</p>
+<h4 id="图像的基本属性？"><a href="#图像的基本属性？" class="headerlink" title="图像的基本属性？"></a>图像的基本属性？</h4><p>分辨率，像素深度，真伪彩色</p>
+<h4 id="图像文件大小的计算"><a href="#图像文件大小的计算" class="headerlink" title="图像文件大小的计算"></a>图像文件大小的计算</h4><p>水平像素×垂直像素×颜色深度</p>
+<h2 id="多媒体数据压缩技术"><a href="#多媒体数据压缩技术" class="headerlink" title="多媒体数据压缩技术"></a>多媒体数据压缩技术</h2><h4 id="熵的概念，什么是信源的熵？"><a href="#熵的概念，什么是信源的熵？" class="headerlink" title="熵的概念，什么是信源的熵？"></a>熵的概念，什么是信源的熵？</h4><p>熵是信息量的度量方法，它表示某一事件出现的消息越多，事件发生的可能性就越小，数学上就是概率越小。<br>$$ H(s)=n=\sum_i\p_i\log_2(1/p_i) $$</p>
+<h4 id="有损压缩和无损压缩"><a href="#有损压缩和无损压缩" class="headerlink" title="有损压缩和无损压缩"></a>有损压缩和无损压缩</h4><p>有损压缩无法恢复原始数据，但不影响人类对其的认知。<br>无损压缩可完全恢复原始数据。</p>
+<h4 id="指出霍夫曼压缩编码的方法、特点"><a href="#指出霍夫曼压缩编码的方法、特点" class="headerlink" title="指出霍夫曼压缩编码的方法、特点"></a>指出霍夫曼压缩编码的方法、特点</h4><ol>
+<li>按照信源出现概率递减顺序排列</li>
+<li>合并最小的两个概率</li>
+<li>重复1 2步骤，直到合并概率为1</li>
+<li>合并运算时大的取0，小的取1</li>
+<li>记录从概率为1处至信源的0-1序列。</li>
+</ol>
+<p>特点： 编码长度可变，硬件实现困难，效率取决于信源数据的概率，没有错误保护，比香农范诺编码效率高。</p>
+<h4 id="指出RLE压缩编码的特点"><a href="#指出RLE压缩编码的特点" class="headerlink" title="指出RLE压缩编码的特点"></a>指出RLE压缩编码的特点</h4><p>编码效率取决于图像本身的特点，适用于计算机生成的图像。</p>
+<h4 id="指出词典压缩编码的原理"><a href="#指出词典压缩编码的原理" class="headerlink" title="指出词典压缩编码的原理"></a>指出词典压缩编码的原理</h4><p>第一类词典法的想法是企图查找正在压缩的字符序列是否在以前输入的数据中出现过，然后用已经出现过的字符串替代重复的部分，它的输出是指针。第二类算法的想法是企图从输入的数据中创建一个“短语词典”，编码数据过程中当遇到已经在词典中出现的“短语”时，编码器就输出这个词典中的短语的“索引号”，而不是短语本身。</p>
+<h4 id="具备什么条件才能进行数据压缩"><a href="#具备什么条件才能进行数据压缩" class="headerlink" title="具备什么条件才能进行数据压缩"></a>具备什么条件才能进行数据压缩</h4><p>数据存在冗余，不敏感因素，数据传输与存储空间的限制。</p>
+<h4 id="冗余指的是什么"><a href="#冗余指的是什么" class="headerlink" title="冗余指的是什么"></a>冗余指的是什么</h4><p>信息所具有的各种性质中多余的无用空间</p>
+<h4 id="指出三种冗余"><a href="#指出三种冗余" class="headerlink" title="指出三种冗余"></a>指出三种冗余</h4><p>空间，时间，统计，结构，信息熵，视觉，知识，其他</p>
+<h2 id="动画原理技术"><a href="#动画原理技术" class="headerlink" title="动画原理技术"></a>动画原理技术</h2><h4 id="世界上主要的彩色电视制式是哪几种"><a href="#世界上主要的彩色电视制式是哪几种" class="headerlink" title="世界上主要的彩色电视制式是哪几种"></a>世界上主要的彩色电视制式是哪几种</h4><p>PAL，NTSC，SECAM</p>
+<h4 id="隔行扫描和非隔行扫描的意义是什么"><a href="#隔行扫描和非隔行扫描的意义是什么" class="headerlink" title="隔行扫描和非隔行扫描的意义是什么"></a>隔行扫描和非隔行扫描的意义是什么</h4><p>因为电子束离开荧光点很快就会不发光，需要扫描维持荧光点发光。</p>
+<h4 id="动画的原理"><a href="#动画的原理" class="headerlink" title="动画的原理"></a>动画的原理</h4><p>动画是由一系列静态画面，快速按序显示而成的。人眼看到的任何物体会在视觉中停留1/24秒。</p>
+<h4 id="阴极射线管的组成"><a href="#阴极射线管的组成" class="headerlink" title="阴极射线管的组成"></a>阴极射线管的组成</h4><p>电子枪、加速结构、聚焦系统、偏转系统、荧光屏。</p>
+<h4 id="液晶显示器的技术指标"><a href="#液晶显示器的技术指标" class="headerlink" title="液晶显示器的技术指标"></a>液晶显示器的技术指标</h4><p>可视角，点距，分辨率，响应时间，对比度，平均亮度</p>
+<h2 id="多媒体的存储技术"><a href="#多媒体的存储技术" class="headerlink" title="多媒体的存储技术"></a>多媒体的存储技术</h2><h4 id="CD盘的组成"><a href="#CD盘的组成" class="headerlink" title="CD盘的组成"></a>CD盘的组成</h4><p>聚碳酸酯层，数据记录层，反射层，保护层。</p>
+<h4 id="光盘的记录原理"><a href="#光盘的记录原理" class="headerlink" title="光盘的记录原理"></a>光盘的记录原理</h4><p>磁光盘：利用磁的纪录特性，借助激光来读取。<br>相变光盘：利用特殊材料在激光的加热下反射率不同来记录信息。<br>激光唱盘：利用在盘片上压制凹坑的机械办法来记录信息。  </p>
+<h4 id="DVD的存储容量是怎么提高的"><a href="#DVD的存储容量是怎么提高的" class="headerlink" title="DVD的存储容量是怎么提高的"></a>DVD的存储容量是怎么提高的</h4><p>增加了记录层数量，光道间距减小，提高了盘片利用面积。</p>
+<h4 id="激光唱盘采样频率如何确定"><a href="#激光唱盘采样频率如何确定" class="headerlink" title="激光唱盘采样频率如何确定"></a>激光唱盘采样频率如何确定</h4><p>采样频率的确定：人耳能听到的声音信号频率范围20~20000HZ，所以在采样之前对输入的声音信号进行滤波。考虑到滤波器在20000HZ的地方有10%的衰减，所以可以用22000HZ的2倍作为声音信号的采样频率。但为了能与电视信号同步，PAL电视的场扫描为50HZ，NTSC电视的场扫描为60HZ，所以取50和60的整倍数，用44100HZ为激光唱盘的采样频率。</p>
+<h4 id="什么是通道编码"><a href="#什么是通道编码" class="headerlink" title="什么是通道编码"></a>什么是通道编码</h4><p>通道编码：声音转换成用“0”和“1”表示的数字信号之后，并不是直接把它们纪录到盘上。物理盘上记录的数据和真正的声音数据之间需要做变换处理，这种处理统称为通道编码。</p>
+<h4 id="为什么CD盘中的EFM是8-14"><a href="#为什么CD盘中的EFM是8-14" class="headerlink" title="为什么CD盘中的EFM是8-14"></a>为什么CD盘中的EFM是8-14</h4><p>根据70年代的技术水平，把“0”的游（行）程长度最短限制在2个，而最长限制在10个，光盘上的信号就能可靠读出。这条规则就是，2个“1”之间至少要有2个“0”最多不超过10个“0”。8位数据可以有256种代码，14位数据可以有16384种代码，但只有267种代码满足“0”游程长度的要求。在这267种代码中，其中10种代码在合并通道代码时限制游程长度仍有困难，在去掉这样的就得到了与8位数据相对应的256种代码。</p>
+<h4 id="光盘的读写原理"><a href="#光盘的读写原理" class="headerlink" title="光盘的读写原理"></a>光盘的读写原理</h4><p>激光照射到数据记录层，通过反射层反射回来不同亮度的光束，使用光电检测器转换成01高低电平信号。</p>
+<h4 id="CD盘上的物理格式，基本结构"><a href="#CD盘上的物理格式，基本结构" class="headerlink" title="CD盘上的物理格式，基本结构"></a>CD盘上的物理格式，基本结构</h4><p>1节有98帧，一帧是36字节，每一帧有3字节同步信号，1字节控制显示，12字节左声道数据，4字节Q校验码，12字节右声道数据，4字节P校验码，1节长0.163mm</p>
+<h4 id="CD和DVD盘所用的校验方法"><a href="#CD和DVD盘所用的校验方法" class="headerlink" title="CD和DVD盘所用的校验方法"></a>CD和DVD盘所用的校验方法</h4><p>错误校验 CRC，错误校正码RS码，CIRC码，RSPC码</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://ruri.chiyuki.moe/2017/11/08/multimedia/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://ruri.chiyuki.moe/2017/11/08/multimedia/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//rurichiyuki.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/11/12/end/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/10/26/test/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="千雪琉璃's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        mail@chiyuki.moe
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:mail@chiyuki.moe" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/06/">六月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">五月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/04/">四月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/02/">二月 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/10/">十月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/08/">八月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">六月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">五月 2019<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">一月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">十二月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/09/">九月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/11/">十一月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/10/">十月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/%E5%85%AC%E5%91%8A/">公告<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%97%A5%E5%BF%97/">日志<span class="sidebar_archives-count">44</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E8%AE%A3%E5%91%8A/">讣告<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时间轴">
+                
+                    <i class="material-icons sidebar-material-icons">timeline</i>
+                
+                时间轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="千雪的朋友们">
+                
+                    <i class="material-icons sidebar-material-icons">group</i>
+                
+                千雪的朋友们
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+        <li>
+            <a href="/about" title="关于千雪">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于千雪
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/atom.xml" title="RSS">
+                
+                    <i class="material-icons sidebar-material-icons">rss_feed</i>
+                
+                RSS
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://chiyukiruri.github.io" target="_blank" rel="noopener" title="Github Pages">
+                
+                    <i class="material-icons sidebar-material-icons">link</i>
+                
+                Github Pages
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/ruri_chiyuki" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/chiyukiruri" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Chiyuki Ruri's Blog
+            
+                <br>
+                
+                    Chiyukiruri's Blog - 千雪琉璃的小窝
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//rurichiyuki.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2017;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
